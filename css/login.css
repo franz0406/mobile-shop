@@ -1,0 +1,66 @@
+@import url(./common.css);
+
+/* 헤더 뒤로가기 아이콘 */
+header .arrow_left{
+    width: 18px;
+    height: 18px;
+    background-position: -236px -150px;
+}
+
+/* 로그인 페이지 슬라이더 */
+.login-swiper_wrapper {
+    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
+}
+.login-swiper_wrapper > .login-swiper {
+    overflow: hidden;
+}
+.login-swiper_wrapper > .login-swiper ul li {
+    width: 100%;
+}
+.login-swiper_wrapper > .login-swiper ul li img {
+    width: 100%;
+    object-fit: cover;
+}
+.login-swiper_wrapper > .pagination {
+    position: absolute;
+    left: 50%; bottom: 23px;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+}
+.login-swiper_wrapper > .pagination .bullet {
+    display: inline-block;
+    margin: 0 3px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    transition: background-color 0.3s linear;
+}
+.login-swiper_wrapper > .pagination .bullet-active {
+    background-color: rgba(255,255,255,1);
+    transition: background-color 0.3s linear;
+}
+
+/* 폼 */
+form {
+    margin-top: 40px;
+}
+form > input[type="submit"] {
+    margin-top: 35px;
+    width: 100%;
+}
+
+/* 푸터 링크*/
+footer {
+    text-align: center;
+}
+footer > p {
+    line-height: 60px;
+    color: var(--font-light-gray);
+}
+footer > p > a {
+    color:var(--font-black);
+    font-weight: bold;
+}

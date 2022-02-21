@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Login - E-SHOP</title>
+</head>
+<body>
+    <header class="absolute">
+        <a href="./onboarding.html" class="sprite arrow_left">go back</a>
+    </header>
+    <main>
+        <div class="login-swiper_wrapper">
+            <div class="login-swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="./images/login_slide_01.jpg" alt=""></li>
+                    <li class="swiper-slide"><img src="./images/login_slide_02.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <form action="#">
+            <div>
+                <label for="usermail">E-mail</label>
+                <input type="email" id="usermail" name="usermail" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" class="btn btn-big" value="Sign In">
+        </form>
+    </main>
+    <footer>
+        <p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+    </footer>
+</body>
+</html>

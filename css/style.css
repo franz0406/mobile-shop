@@ -1,0 +1,47 @@
+@import url(./common.css);
+
+/* 슬라이더 */
+.swiper_wrapper {
+    max-width: 373px;
+    margin: 0 auto;
+}
+.swiper_wrapper > .swiper {
+    overflow: hidden;
+}
+.swiper_wrapper > .swiper img {
+    width: 100%;
+}
+.pagination {
+    margin-top: 55px;
+    text-align: center;
+}
+.pagination .bullet {
+    display: inline-block;
+    margin: 0 3px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background-color: #C2C4CA;
+    transition: background-color 0.3s linear;
+}
+.pagination .bullet-active {
+    background-color: #262628;
+    transition: background-color 0.3s linear;
+}
+
+/* 내용 */
+
+.content h2 {
+    margin-bottom: 23px;
+    text-align: center;
+}
+.content p {
+    text-align: center;
+}
+
+/* 푸터 링크 버튼 */
+footer {
+    display: flex;
+}
+footer a {
+    flex:1;
+}

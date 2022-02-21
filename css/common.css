@@ -6,9 +6,13 @@
     /* 색상 */
     --main-color:#262628;
     --orange:#f05522;
+    --gray:#979797;
+    --light-gray:#C2C4CA;
 
     /* 글자 색상 */
     --font-white:#fff;
+    --font-light-gray:#C2C4CA;
+    --font-black:#262628;
 }
 
 /* 폰트 */
@@ -16,6 +20,7 @@ body {
     font-family: 'SF UI Display Light';
     font-size:15px;
     letter-spacing: 0.40px;
+    color:var(--font-black);
 }
 .h1 {
     font-family: 'SF UI Display Heavy';
@@ -56,8 +61,41 @@ body {
     display: flex;
     flex-direction: column;
 }
+header {
+    display: flex;
+    align-items: center;
+    padding: 35px 20px;
+}
+header.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
 main {
     flex:1;
+}
+
+/* 글자 히든 */
+.hidden {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%); 
+    width: 1px; height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute;
+    white-space: nowrap;
+}
+
+/* 스프라이트 이미지 */
+.sprite {
+    display: inline-block;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    text-indent: -9999em;
 }
 
 /* 버튼 스타일 */
@@ -81,4 +119,28 @@ main {
 .btn-small {
     font-size: 13px;
     line-height: 30px;
+}
+
+/* 폼 인풋 & 라벨 스타일 */
+form {
+    padding: 0 38px;
+}
+form > div + div {
+    margin-top: 25px;
+}
+form > div > input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    font-family: 'SF UI Display Medium';
+    font-size:15px;
+    outline: none;
+    transition: 0.3s ease-out;
+}
+form > div > label {
+    color:var(--font-light-gray);
+}
+form > div > input:focus{
+    border-bottom: 1px solid var(--main-color);
 }
