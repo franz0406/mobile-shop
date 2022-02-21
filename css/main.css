@@ -1,0 +1,54 @@
+@import url(./common.css);
+
+/* 메인 슬라이더 */
+.main_swiper_wrapper {
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 37px 53px 0;
+}
+.main_swiper_wrapper > .main_swiper {
+    overflow: hidden;
+}
+.main_swiper_wrapper > .main_swiper ul li {
+    width: 100%;
+    height: 346px;
+}
+.main_swiper_wrapper > .main_swiper ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_swiper_wrapper > .pagination {
+    padding: 36px 0;
+    text-align: center;
+}
+.main_swiper_wrapper > .pagination .bullet {
+    display: inline-block;
+    margin: 0 3px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background-color: #C2C4CA;
+    transition: background-color 0.3s linear;
+}
+.main_swiper_wrapper > .pagination .bullet-active {
+    background-color: #262628;
+    transition: background-color 0.3s linear;
+}
+
+/* 메인 내용 */
+.main_content {
+    max-width: 270px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main_content > h2 {
+    margin-bottom: 23px;
+}
+
+/* 푸터 버튼 */
+footer {
+    display: flex;
+}
+footer a{
+    flex:1;
+}

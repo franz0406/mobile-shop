@@ -1,0 +1,84 @@
+@import url(./reset.css);
+@import url(./webfonts.css);
+
+/* 변수 */
+:root {
+    /* 색상 */
+    --main-color:#262628;
+    --orange:#f05522;
+
+    /* 글자 색상 */
+    --font-white:#fff;
+}
+
+/* 폰트 */
+body {
+    font-family: 'SF UI Display Light';
+    font-size:15px;
+    letter-spacing: 0.40px;
+}
+.h1 {
+    font-family: 'SF UI Display Heavy';
+    font-size:36px;
+    text-transform: uppercase;
+    letter-spacing: 0.29px;
+}
+.h2 {
+    font-family: 'SF UI Display Bold';
+    font-size:26px;
+    text-transform: uppercase;
+    letter-spacing: 0.21px;
+}
+.h3 {
+    font-family: 'SF UI Display Heavy';
+    font-size:24px;
+    letter-spacing: 0.19px;
+}
+.h4 {
+    font-family: 'SF UI Display Heavy';
+    font-size:20px;
+}
+.h5 {
+    font-family: 'SF UI Display Semibold';
+    font-size:20px;
+}
+.h6 {
+    font-family: 'SF UI Display Semibold';
+    font-size:14px;
+    letter-spacing: 0.11px;
+}
+p {
+    line-height: 18px;
+}
+
+/* 레이아웃 */
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex:1;
+}
+
+/* 버튼 스타일 */
+.btn {
+    font-family: 'SF UI Display Medium';
+    background: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--font-white);
+}
+.btn-big {
+    font-family: 'SF UI Display Semibold';
+    font-size:14px;
+    line-height: 50px;
+    letter-spacing: 0.11px;
+}
+.btn-normal {
+    font-size: 13px;
+    line-height: 38px;
+}
+.btn-small {
+    font-size: 13px;
+    line-height: 30px;
+}
