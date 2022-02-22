@@ -10,7 +10,8 @@ header .arrow_left{
 /* 로그인 페이지 슬라이더 */
 .login-swiper_wrapper {
     position: relative;
-    max-width: 375px;
+    width: 100%;
+    height: 356px;
     margin: 0 auto;
 }
 .login-swiper_wrapper > .login-swiper {
@@ -18,9 +19,11 @@ header .arrow_left{
 }
 .login-swiper_wrapper > .login-swiper ul li {
     width: 100%;
+    height: 356px;
 }
 .login-swiper_wrapper > .login-swiper ul li img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .login-swiper_wrapper > .pagination {

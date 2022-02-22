@@ -12,6 +12,7 @@
     /* 글자 색상 */
     --font-white:#fff;
     --font-light-gray:#C2C4CA;
+    --font-dark-gray:#4a4a4a;
     --font-black:#262628;
 }
 
@@ -51,6 +52,14 @@ body {
     font-family: 'SF UI Display Semibold';
     font-size:14px;
     letter-spacing: 0.11px;
+}
+.h7 {
+    font-family: 'SF UI Display Medium';
+    font-size:13px;
+}
+.h8 {
+    font-family: 'SF UI Display Medium';
+    font-size:12px;
 }
 p {
     line-height: 18px;

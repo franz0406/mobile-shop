@@ -1,0 +1,64 @@
+@import url(./common.css);
+
+/* 헤더 아이콘 */
+header {
+    justify-content: space-between;
+}
+header > .top-links a:first-of-type{
+    margin-right: 34px;
+}
+header .menu {
+    width: 18px;
+    height: 16px;
+    background-position: -354px -583px;
+}
+header .wish-list {
+    width: 16px;
+    height: 18px;
+    background-position: -119px -198px;
+}
+header .cart {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/Wishlist.png);
+}
+
+/* 카테고리 슬라이드 */
+.category-slide-wrapper {
+    margin-left: 20px;
+    overflow: hidden;
+}
+.category-slide-wrapper li {
+    padding: 20px 0;
+    width: auto !important;
+}
+.category-slide-wrapper li a {
+    color:var(--font-light-gray);
+}
+.category-slide-wrapper li a.active {
+    color:var(--font-black);
+}
+
+/* 제품 리스트 */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:var(--font-dark-gray);
+}
+.products-list > li {
+    width: 48%;    
+    text-align: center;
+}
+.products-list > li .image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.products-list > li h3 {
+    padding: 15px 0 5px;
+}
+.products-list > li span {
+    display: block;
+    padding-bottom: 25px;
+}
