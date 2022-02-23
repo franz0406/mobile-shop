@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function(){
     }
     if(asideMenu) {
         // 사이드 메뉴 영역 터치스크롤시 body 의 스크롤 이벤트 막기
-        asideMenu.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive:false }); 
+        // asideMenu.addEventListener('touchmove', function(e) { e.preventDefault(); }, { passive:false }); 
 
         // 사이드 메뉴 아코디언
         const sideMenuContents = document.querySelectorAll('.accordion-contents');
