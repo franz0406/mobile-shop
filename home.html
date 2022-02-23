@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1 class="hidden">top menu</h1>
-        <span class="sprite menu">menu</span>
+        <span class="sprite menu" id="menu">menu</span>
         <div class="top-links">
             <a href="#" class="sprite wish-list">wish list</a>
             <a href="#" class="sprite cart">cart</a>
@@ -93,55 +93,55 @@
             </li>
         </ul>
     </main>
-    <aside>
-        <header>
+    <aside id="aside-menu">
+        <div class="aside-header">
             <h2 class="user-profile">user profile</h2>
-            <p class="user-name">Dennis James</p>
-        </header>
+            <p class="user-name h4">Dennis James</p>
+        </div class="aside-header">
         <section class="category-accordion">
             <ul>
-                <li>
+                <li class="accordion-contents">
                     <div>
-                        <h3>woman<span class="sprite plus">plus</span></h3>
-                        <ul>
+                        <h3>woman<span>+</span></h3>
+                        <ul class="accordion-list">
+                            <li><a href="#">top</a></li>
+                            <li><a href="#">bottom</a></li>
+                            <li><a href="#">underwear</a></li>
+                            <li><a href="#">cosmetic</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="accordion-contents">
+                    <div>
+                        <h3>man<span>+</span></h3>
+                        <ul class="accordion-list">
                             <li><a href="#">top</a></li>
                             <li><a href="#">bottom</a></li>
                             <li><a href="#">underwear</a></li>
                         </ul>
                     </div>
                 </li>
-                <li>
+                <li class="accordion-contents">
                     <div>
-                        <h3>man<span class="sprite plus">plus</span></h3>
-                        <ul>
+                        <h3>kids<span>+</span></h3>
+                        <ul class="accordion-list">
                             <li><a href="#">top</a></li>
                             <li><a href="#">bottom</a></li>
-                            <li><a href="#">underwear</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>kids<span class="sprite plus">plus</span></h3>
-                        <ul>
-                            <li><a href="#">top</a></li>
-                            <li><a href="#">bottom</a></li>
-                            <li><a href="#">underwear</a></li>
                         </ul>
                     </div>
                 </li>
             </ul>
-            <nav>
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="#">Top Deals</a></li>
-                    <li><a href="#">New Products</a></li>
-                    <li><a href="#">Stores</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </nav>
         </section>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="#">Top Deals</a></li>
+                <li><a href="#">New Products</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
     </aside>
 </body>
 </html>
