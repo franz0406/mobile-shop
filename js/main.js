@@ -1,5 +1,13 @@
 window.addEventListener('DOMContentLoaded', function(){
 
+    // index 페이지 모달
+    const indexModal = document.querySelector('.modal');
+    if(indexModal != null){
+        indexModal.addEventListener('click', (e)=>{
+            e.target.style.display = 'none';
+        })
+    }
+
     // 페이지 뒤로가기
     const goBack = document.getElementById('go-back');
     if(goBack != null){
@@ -46,5 +54,8 @@ window.addEventListener('DOMContentLoaded', function(){
             })
         })
     }
+
+    
+
 
 }) // DOMContentLoaded end

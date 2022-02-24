@@ -8,21 +8,6 @@ header {
 header > .top-links a:first-of-type{
     margin-right: 34px;
 }
-header .menu {
-    width: 18px;
-    height: 16px;
-    background-position: -354px -583px;
-}
-header .wish-list {
-    width: 16px;
-    height: 18px;
-    background-position: -119px -198px;
-}
-header .cart {
-    width: 18px;
-    height: 18px;
-    background-image: url(../images/Wishlist.png);
-}
 
 /* 카테고리 슬라이드 */
 .category-slide-wrapper {

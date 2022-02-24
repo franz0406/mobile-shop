@@ -60,7 +60,15 @@ window.addEventListener('DOMContentLoaded', function(){
         spaceBetween: 25,
         freeMode: true
     })
-    
+
+
+    // image thumbnail swiper
+    const thumbnailSwiper = new Swiper(".produc-thumb-slide",{
+        slidesPerView: "auto",
+        spaceBetween: 13,
+        freeMode: true
+    })
+
 
 
 }) // DOMContentLoaded Ends

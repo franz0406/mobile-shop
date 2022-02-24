@@ -1,0 +1,193 @@
+@import url(./common.css);
+
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+}
+
+/* 검색 폼 */
+main {
+    padding: 0 15px;
+}
+form {
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+form > label {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+form > input {
+    margin-right: 30px;
+    flex: 1;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    text-indent: 25px;
+    outline: none;
+    transition: border-bottom 0.3s;
+}
+form > input:focus {
+    border-bottom: 1px solid var(--main-color);
+}
+form > input:focus + label {
+    opacity: 1;
+}
+form > input::placeholder {
+    font-weight: bold;
+    color:var(--font-light-gray);
+}
+
+/* 제품 상세 */
+.product-details {
+    padding: 35px 0 30px 0;
+}
+.product-details .top-area {
+    position: relative;
+    height: 427px;
+}
+.product-details .top-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-details .top-area .icons {
+    position: absolute;
+    bottom: 32px; right: 15px;
+}
+.product-details .top-area .icons span {
+    position: relative;
+    display: block;
+    margin-top: 13px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+}
+.product-details .top-area .icons span i {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.product-details .bottom-area {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-details .bottom-area h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 제품 썸네일 이미지 */
+.product-details .produc-thumb {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.product-details .produc-thumb li {
+    width: 36%;
+    height: 177px;
+}
+.product-details .produc-thumb li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 제품 설명 */
+.product-details .description {
+    padding: 28px 0 40px 0;
+}
+.product-details h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.product-details .description p:last-child {
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+.product-details .people-like .people-avatar{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.product-details .people-like .people-avatar span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.product-details .people-like .people-avatar span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-details .people-like .people-avatar .likes {
+    position: relative;
+    text-indent: -9999em;
+    background: var(--orange);    
+}
+.product-details .people-like .people-avatar .likes::before {
+    position: absolute;
+    content: "+";
+    top: 47%;
+    left: 25%;
+    transform: translateY(-50%);
+    text-indent: 0;
+    font-size: 13px;
+    color:#fff;
+}
+.product-details .people-like .people-avatar .likes::after {
+    position: absolute;
+    content: attr(data-people-like);
+    top: 50%;
+    left: 45%;
+    transform: translateY(-50%);
+    text-indent: 0;
+    font-size: 13px;
+    color:#fff;
+}
+
+/* 추천 제품 */
+.wear-with {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.wear-with .wear-with-products {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.wear-with .wear-with-products figure {
+    display: flex;
+    flex-direction: column;
+}
+.wear-with .wear-with-products figure+figure {
+    margin-left: 10px;
+}
+.wear-with .wear-with-products figure div img {
+    width: 100%;
+}
+.wear-with .wear-with-products figure figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+}
+.wear-with .wear-with-products figure h5 {
+    margin-bottom: 5px;
+    margin-top: 12px; 
+    line-height: 1.4;   
+}
+.wear-with .wear-with-products figure span {
+    font-size:12px;
+}

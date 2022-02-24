@@ -1,11 +1,5 @@
 @import url(./common.css);
 
-/* 헤더 뒤로가기 아이콘 */
-header .arrow_left{
-    width: 18px;
-    height: 18px;
-    background-position: -236px -150px;
-}
 
 /* 로그인 페이지 슬라이더 */
 .login-swiper_wrapper {

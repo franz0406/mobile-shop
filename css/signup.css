@@ -1,11 +1,6 @@
 @import url(./common.css);
 
 /* 헤더 */
-header > .close {
-    width: 14px;
-    height: 14px;
-    background-position: -120px -391px;
-}
 header > h1 {
     flex:1;
     text-align: center;

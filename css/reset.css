@@ -55,3 +55,8 @@ a {
 img {
     vertical-align: top;
 }
+button {
+	border: none;
+	padding: 0;
+	background: none;
+}

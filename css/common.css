@@ -106,6 +106,74 @@ main {
     background-repeat: no-repeat;
     text-indent: -9999em;
 }
+.sprite.close {
+    width: 14px;
+    height: 14px;
+    background-position: -120px -391px;
+}
+.sprite.arrow_left{
+    width: 18px;
+    height: 18px;
+    background-position: -236px -150px;
+}
+.sprite.menu {
+    width: 18px;
+    height: 16px;
+    background-position: -354px -583px;
+}
+.sprite.cart {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/Wishlist.png);
+}
+.sprite.search {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -102px;
+}
+.sprite.barcode {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -582px;
+}
+.sprite.share {
+    width: 16px;
+    height: 16px;
+    background-position: -355px -247px;
+}
+.sprite.wish-list-default {
+    width: 16px;
+    height: 18px;
+    background-position: -119px -198px;
+}
+.sprite.wish-list{
+    position: relative;
+    width: 16px;
+    height: 18px;
+    background-position: -119px -198px;
+}
+.sprite.arrow_left{
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background-position: -236px -150px;
+}
+
+.sprite.wish-list::before {
+    content:attr(data-cart-count);
+    position: absolute;
+    top: -10px; right: -12px;
+    width: 19px;
+    height: 19px;
+    background: var(--main-color);
+    border-radius: 50%;
+    font-family: 'SF UI Display Semibold';
+    font-size:14px;
+    color:#fff;
+    line-height: 18px;
+    text-align: center;
+    text-indent: 0;
+}
 
 /* 버튼 스타일 */
 .btn {
@@ -122,14 +190,20 @@ main {
     letter-spacing: 0.11px;
 }
 .btn-normal {
+    padding: 12px 24px;
     font-size: 13px;
-    line-height: 38px;
 }
 .btn-small {
     font-size: 13px;
     line-height: 30px;
 }
 
+/* 내용 구분선 */
+hr {
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+}
 /* 폼 인풋 & 라벨 스타일 */
 form {
     padding: 0 38px;
@@ -220,7 +294,7 @@ aside > .category-accordion > ul > li ul li a {
 }
 aside > nav {
     border-top: 1px solid var(--font-light-gray);
-    padding:30px 22px 0;
+    padding:30px 22px;
 }
 aside > nav > ul > li+li {
     margin-top: 30px;
