@@ -170,6 +170,7 @@ form > input::placeholder {
 .wear-with .wear-with-products figure {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 .wear-with .wear-with-products figure+figure {
     margin-left: 10px;
@@ -190,4 +191,47 @@ form > input::placeholder {
 }
 .wear-with .wear-with-products figure span {
     font-size:12px;
+}
+
+/* 리뷰 */
+.reviews {
+    position: relative;
+}
+.reviews > ul {
+    margin-top: 30px;
+}
+.reviews > ul > li {
+    display: flex;
+}
+.reviews > ul > li > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.reviews > ul > li > div {
+    flex:1;
+}
+.reviews > ul > li > div h6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-family: 'SF UI Display Semibold';
+    font-size: 15px;
+}
+.reviews > ul > li > div h6 span {
+    color:var(--font-light-gray);
+}
+.reviews > ul > li > div .time {
+    font-size:12px;
+    color:var(--font-light-gray);
+}
+.reviews > ul > li > div p {
+    padding: 13px 0 25px 0;
+}
+.reviews > .all-review {
+    position: absolute;
+    top: 0; right: 0;
+    color:var(--orange);
+    font-weight: bold;
 }
