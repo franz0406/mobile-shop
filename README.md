@@ -28,7 +28,7 @@ goBack.addEventListener('click', ()=>{ window.history.back() });
 
 사용자가 어떠한 경로로 페이지에 접근하였든 히스토리 내역 체크!
 ```javascript
-// history.length 기본값 1
+// history.length 의 기본값 1
 
 element.addEventListener('click', (e) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ element.addEventListener('click', (e) => {
 ```
 ### 뒤로가기를 눌렀거나 히스토리를 감지해야 하는 경우 !!
 ```javascript
-// BFCache 작동을 판단할 수 있는 API [ pageshow / pagehide ]
+// BFCache 작동을 판단할 수 있는 이벤트 [ pageshow / pagehide ]
 window.onpageshow = function (event) {
     if (event.persisted || (window.performance && window.performance.navigation.type == 2)){
         console.log('BFCahe로부터 복원됨');

@@ -1,0 +1,95 @@
+@import url(./common.css);
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 23px 22px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    z-index: 99;
+}
+header > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > div > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+header > h1 {
+    padding: 40px 0 20px;
+}
+header > nav > ul {
+    display: flex;
+}
+header > nav > ul > li {
+    padding-bottom: 6px;
+    margin-right: 40px;
+    text-transform: uppercase;
+    color:var(--font-light-gray);
+    border-bottom:1px solid transparent;
+}
+header > nav > ul > li.active {
+    color:var(--orange);
+    border-bottom:1px solid var(--orange);
+}
+
+/* 품목 체크 리스트 */
+main {
+    margin-top: 180px;
+}
+main > form {
+    padding: 0;
+    padding-top: 25px;
+}
+main > form > p {
+    padding: 0 22px;
+}
+main > form > p+p {
+    margin-top: 40px;
+}
+main > form > p > input {
+    display: none;
+}
+main > form > p > label {
+    position: relative;
+    display: block;
+}
+main > form > p > label::before {
+    position: absolute;
+    left: 0; top: 20px;
+    content:attr(data-total-item);
+    font-size:15px;
+    color:var(--font-light-gray);
+    text-transform: lowercase;
+}
+main > form > p > input:checked +label::after {
+    position: absolute;
+    content: "";
+    top: -3px; right: -3px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: url(../images/Check.png)no-repeat center/cover;
+}
+main > form > .submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-color);
+    height: 50px;
+}
+main > form > .submit > a {
+    text-transform: uppercase;
+    color:#fff;
+}
+main > form > .submit > button {
+    text-transform: uppercase;
+    color:var(--orange);
+}
