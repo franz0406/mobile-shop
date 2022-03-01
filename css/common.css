@@ -112,6 +112,12 @@ main {
     height: 14px;
     background-position: -120px -391px;
 }
+.sprite.delete {
+    width: 18px;
+    height: 18px;
+    background-position: -354px -342px;
+    opacity: 0.2;
+}
 .sprite.arrow_left{
     width: 18px;
     height: 18px;
