@@ -9,7 +9,10 @@ header > h1 {
 
 /* 리스트 총 개수 */
 form {
+    height: 100%;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 form > .cart-content {
     padding: 0 20px;
@@ -111,6 +114,7 @@ form > .cart-total > div > .price {
     color: var(--font-black);
 }
 form > button {
+    margin-top: auto;
     width: 100%;
 }
 
